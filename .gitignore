@@ -1,0 +1,8 @@
+build_site_*.ps1
+file_list.txt
+debug_paths.ps1
+data.json
+.vscode/
+node_modules/
+*.webp
+*.log
