@@ -287,3 +287,96 @@ tr:hover td {
 ::-webkit-scrollbar-thumb:hover {
     background: #94a3b8;
 }
+
+/* Ruby (Furigana) Styling */
+ruby {
+    ruby-align: center;
+    ruby-position: over;
+}
+
+rt {
+    font-size: 0.65em;
+    color: #e11d48 !important;
+    /* Vibrant red */
+    font-weight: 400 !important;
+    /* Removed bold */
+    user-select: none;
+    letter-spacing: 0.05em;
+    padding-bottom: 0.1em;
+}
+
+/* Dialogue Layout */
+.dialogue-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem 0;
+}
+
+.dialogue-line {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.dialogue-speaker {
+    font-weight: 600;
+    color: var(--accent-color);
+    text-align: right;
+    padding-top: 0.2rem;
+}
+
+.dialogue-text {
+    background: var(--bg-color);
+    padding: 0.8rem 1.2rem;
+    border-radius: 8px;
+    border: 1px solid var(--glass-border);
+    position: relative;
+    line-height: 1.8;
+}
+
+/* Test Layout */
+.test-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem 0;
+}
+
+.test-question {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--card-shadow);
+}
+
+.test-q-text {
+    font-weight: 600;
+    margin-bottom: 1rem;
+    display: flex;
+    gap: 0.8rem;
+    align-items: flex-start;
+}
+
+.test-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.8rem 2rem;
+    margin-left: 2.5rem;
+}
+
+.test-option {
+    padding: 0.4rem 0.8rem;
+    background: #f1f5f9;
+    border-radius: 6px;
+    font-size: 0.95rem;
+}
+
+/* Prevent ruby from increasing line height too much */
+.content-card td,
+.content-card p,
+.content-card li {
+    line-height: 1.8;
+}
